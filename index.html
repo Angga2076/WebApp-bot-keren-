@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Telegram Web App - Animasi Robot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #1e1e2f, #0f0f1f);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 50px 20px;
+      overflow-x: hidden;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #00ffd5;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+    .robot {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      background-image: url('https://i.ibb.co/Hx7BpL3/robot-icon.gif');
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    .footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="robot"></div>
+  <h1>Selamat Datang di Bot Kamu</h1>
+  <p>Ini adalah Telegram Web App dengan animasi robot keren 🤖✨</p>
+  <div class="footer">Dibuat dengan ❤️ oleh Telegram Web App</div>
+</body>
+</html>
